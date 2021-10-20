@@ -1,19 +1,18 @@
 {% set name = "QRules" %}
-{% set version = "0.9.2" %}
+{% set version = "0.9.3" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url:
-    https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: baa8f72320fed23310d1e40ab3f0d5970e30a94922c095b95d315c063cbde7a9
+  url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
+  sha256: 845d57d82a2888065bad4a7f5e422bb6b2d8881b803ee26789e4f0a75a6c49df
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -45,8 +44,7 @@ about:
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
-  summary:
-    Rule based particle reaction problem solver on a quantum number level
+  summary: Rule based particle reaction problem solver on a quantum number level
 
   description: |
     QRules is a Python package for **validating and generating particle reactions**
