@@ -1,5 +1,5 @@
 {% set name = "QRules" %}
-{% set version = "0.9.7" %}
+{% set version = "0.9.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: ce23327b44976f77313c6ed61772552142581b3fa0f36c88a321c6cd6914e49e
+  sha256: 2ecf44e3e1f6364e26ecdd8c89498c032c05f6b0fc98881a26ba3c6bcbc827a0
 
 build:
   noarch: python
