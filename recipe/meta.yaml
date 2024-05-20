@@ -1,4 +1,4 @@
-{% set name = "QRules" %}
+{% set name = "qrules" %}
 {% set version = "0.10.2" %}
 
 package:
@@ -12,39 +12,38 @@ source:
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
-    - python >=3.6
-    - setuptools_scm
+    - python >=3.7
+    - setuptools >=61.2
+    - setuptools-scm
   run:
-    - python >=3.6
+    - python >=3.7
     - attrs >=20.1.0
     - jsonschema
     - particle
-    - python-constraint
+    - python-constraint2
     - PyYAML
     - tqdm >=4.24.0
     - typing-extensions
 
 test:
+  commands:
+    - pip check
   imports:
     - qrules
-    - qrules.io
-    - qrules.conservation_rules
-    - qrules.particle
-    - qrules.quantum_numbers
-    - qrules.topology
-    - qrules.transition
+  requires:
+    - pip
 
 about:
   home: https://github.com/ComPWA/qrules
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
-  summary: Rule based particle reaction problem solver on a quantum number level
+  summary: Rule-based particle reaction problem solver on a quantum number level
 
   description: |
     QRules is a Python package for **validating and generating particle reactions**
@@ -65,3 +64,4 @@ about:
 extra:
   recipe-maintainers:
     - redeboer
+    - shenvitor
