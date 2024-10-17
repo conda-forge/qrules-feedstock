@@ -1,5 +1,5 @@
 {% set name = "qrules" %}
-{% set version = "0.10.2" %}
+{% set version = "0.10.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: fc331b92654fcd0184955ec403560cc47581b45cfa4d2093a2a8ea1975920ae1
+  sha256: 729fca4ef0713c9207d54aeab887be593bb7e1a2605ed378177739d8289bab6f
 
 build:
   noarch: python
@@ -25,7 +25,7 @@ requirements:
     - attrs >=20.1.0
     - jsonschema
     - particle
-    - python-constraint2
+    - python-constraint
     - PyYAML
     - tqdm >=4.24.0
     - typing-extensions
@@ -40,8 +40,8 @@ test:
 
 about:
   home: https://github.com/ComPWA/qrules
-  license: GPL-3.0-or-later
-  license_family: GPL
+  license: Apache-2.0
+  license_family: Apache
   license_file: LICENSE
   summary: Rule-based particle reaction problem solver on a quantum number level
 
