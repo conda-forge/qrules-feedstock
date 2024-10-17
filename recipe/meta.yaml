@@ -40,8 +40,8 @@ test:
 
 about:
   home: https://github.com/ComPWA/qrules
-  license: GPL-3.0-or-later
-  license_family: GPL
+  license: Apache-2.0
+  license_family: Apache
   license_file: LICENSE
   summary: Rule-based particle reaction problem solver on a quantum number level
 
