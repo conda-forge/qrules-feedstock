@@ -5,9 +5,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/qrules-feedstoc
 
 Home: https://github.com/ComPWA/qrules
 
-Package license: GPL-3.0-or-later
+Package license: Apache-2.0
 
-Summary: Rule based particle reaction problem solver on a quantum number level
+Summary: Rule-based particle reaction problem solver on a quantum number level
 
 Development: https://github.com/ComPWA/qrules
 
@@ -161,4 +161,5 @@ Feedstock Maintainers
 =====================
 
 * [@redeboer](https://github.com/redeboer/)
+* [@shenvitor](https://github.com/shenvitor/)
 
