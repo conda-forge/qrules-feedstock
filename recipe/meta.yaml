@@ -11,17 +11,17 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools >=61.2
     - setuptools-scm
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - attrs >=20.1.0
     - frozendict
     - jsonschema
@@ -38,6 +38,7 @@ test:
     - qrules
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/ComPWA/qrules
