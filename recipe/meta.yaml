@@ -29,7 +29,6 @@ requirements:
     - python-constraint
     - PyYAML
     - tqdm >=4.24.0
-    - typing-extensions
 
 test:
   commands:
