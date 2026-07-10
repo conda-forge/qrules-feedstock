@@ -163,5 +163,4 @@ Feedstock Maintainers
 
 * [@Zeyna777](https://github.com/Zeyna777/)
 * [@redeboer](https://github.com/redeboer/)
-* [@shenvitor](https://github.com/shenvitor/)
 
