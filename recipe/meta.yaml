@@ -23,10 +23,10 @@ requirements:
   run:
     - python >={{ python_min }}
     - attrs >=20.1.0
+    - compwa-python-constraint
     - frozendict
     - jsonschema
     - particle
-    - python-constraint
     - PyYAML
     - tqdm >=4.24.0
 
