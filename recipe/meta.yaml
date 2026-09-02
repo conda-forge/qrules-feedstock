@@ -1,13 +1,13 @@
 {% set name = "qrules" %}
-{% set version = "0.10.9" %}
+{% set version = "0.10.11" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: fbd1e4e0d86c6eea371c95a2e62732dc73cba45afb4e4d657e123a8017f1bc9c
+  url: https://files.pythonhosted.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
+  sha256: 39d9e1b3bdf602de90ff4f6f2e0cfff0903d28a74e8799e42dd68a0fbf5128a6
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - frozendict
     - jsonschema
     - particle
-    - python-constraint
+    - python-constraint2
     - PyYAML
     - tqdm >=4.24.0
 
