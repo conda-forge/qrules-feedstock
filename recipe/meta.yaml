@@ -26,6 +26,7 @@ requirements:
     - frozendict
     - jsonschema
     - particle
+    - pdg
     - python-constraint2
     - PyYAML
     - tqdm >=4.24.0
