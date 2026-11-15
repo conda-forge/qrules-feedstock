@@ -27,7 +27,7 @@ requirements:
     - jsonschema
     - particle
     - python-constraint2
-    - PyYAML
+    - pyyaml
     - tqdm >=4.24.0
 
 test:
